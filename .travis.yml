@@ -15,5 +15,6 @@ matrix:
         - os: linux
           dist: xenial
           python: 3.7
+        - os: osx
 script:
     - python -c "import sys; print(sys.version)"
