@@ -1,8 +1,8 @@
-dist: xenial
 language: python
-python:
-    - "3.5"
-before_install:
-    - sudo apt-get update
+
+matrix:
+    include:
+        - os: linux
+          python: 3.2
 script:
-    - echo "fun"
+    - python -c "print('foo')"
