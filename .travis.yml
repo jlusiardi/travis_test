@@ -16,6 +16,12 @@ matrix:
           dist: xenial
           python: 3.7
         - os: osx
+          python: 3.2
+        - os: osx
           python: 3.3
+        - os: osx
+          python: 3.4
+        - os: osx
+          python: 3.5
 script:
     - python -c "import sys; print(sys.version)"
