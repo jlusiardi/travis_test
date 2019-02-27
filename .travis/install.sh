@@ -23,8 +23,8 @@ if [ "$TRAVIS_OS_NAME" == "osx" ]; then
 fi
 
 if [ "$TRAVIS_OS_NAME" == "windows" ]; then
-    choco install python3 --params "/Python3:C:\Python3"
-    export PATH="/c/Python3:/c/Python3/Scripts:$PATH"
+    choco install python3
+    refreshenv
     python3 --version
     pip3 --version
 fi
