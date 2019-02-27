@@ -25,7 +25,7 @@ fi
 if [ "$TRAVIS_OS_NAME" == "windows" ]; then
     choco install python3 --params "/Python37:C:\Python37"
     export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
-    python3 --version
+    py --version
     pip3 --version
 fi
 
