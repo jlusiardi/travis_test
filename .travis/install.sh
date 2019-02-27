@@ -27,5 +27,6 @@ if [ "$TRAVIS_OS_NAME" == "windows" ]; then
     export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
     py --version
     pip3 --version
+    pip3 install -r requirements_windows.txt
 fi
 

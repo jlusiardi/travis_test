@@ -3,6 +3,7 @@ language: python
 matrix:
     include:
         - os: linux
+          env: PY=python3
           python: 3.2
 #        - os: linux
 #          python: 3.3
@@ -14,6 +15,7 @@ matrix:
 #          python: 3.6
         - os: linux
           dist: xenial
+          env: PY=python3
           python: 3.7
 #        - os: osx
 #          python: 3.2
@@ -24,9 +26,11 @@ matrix:
         - os: osx
           language: generic
           env: PYTHON=3.5.1
+          env: PY=python3
         - os: windows
           language: sh
+          env: PY=py
 before_install:
     - ./.travis/install.sh
 script:
-    - python -c "import sys; print(sys.version)"
+    - $PY -c "import sys; print(sys.version)"
