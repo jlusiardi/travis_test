@@ -2,12 +2,12 @@ language: python
 
 matrix:
     include:
-        - os: linux
-          env: PY=python3
-          python: 3.2
-        - os: linux
-          env: PY=python3
-          python: 3.3
+#        - os: linux
+#          env: PY=python3
+#          python: 3.2
+#        - os: linux
+#          env: PY=python3
+#          python: 3.3
         - os: linux
           env: PY=python3
           python: 3.4
