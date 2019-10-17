@@ -23,8 +23,8 @@ if [ "$TRAVIS_OS_NAME" == "osx" ]; then
 fi
 
 if [ "$TRAVIS_OS_NAME" == "windows" ]; then
-    choco install python3 --params "/Python37:C:\Python37"
-    export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
+    choco install python3 --params "/Python38:C:\Python38"
+    export PATH="/c/Python38:/c/Python38/Scripts:$PATH"
     py --version
     pip3 --version
     pip3 install -r requirements_windows.txt
