@@ -27,7 +27,7 @@ matrix:
 #          python: 3.4
         - os: xcode11.3
           language: generic
-          env: PYTHON=3.5.6
+          env: PYTHON=3.7.1
           env: PY=python3
         - os: windows
           language: sh
