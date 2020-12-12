@@ -3,7 +3,9 @@
 if [ "$TRAVIS_OS_NAME" == "linux" ]; then
     sudo apt-get update;
     sudo apt-get install -y build-essential python3-dev libdbus-1-dev libdbus-glib-1-dev libgirepository1.0-dev;
-    pip install -r requirements_linux.txt
+    pip3 install -r requirements.txt
+    which flake8
+    pip3 install -r requirements_linux.txt
 fi
 
 if [ "$TRAVIS_OS_NAME" == "osx" ]; then
@@ -19,6 +21,8 @@ if [ "$TRAVIS_OS_NAME" == "osx" ]; then
     python3 --version
     pip --version
     pip3 --version
+    pip3 install -r requirements.txt
+    which flake8
     pip3 install -r requirements_osx.txt
 fi
 
@@ -27,6 +31,8 @@ if [ "$TRAVIS_OS_NAME" == "windows" ]; then
     export PATH="/c/Python39:/c/Python39/Scripts:$PATH"
     py --version
     pip3 --version
+    pip3 install -r requirements.txt
+    which flake8
     pip3 install -r requirements_windows.txt
 fi
 
