@@ -25,7 +25,7 @@ matrix:
 #          python: 3.3
 #        - os: osx
 #          python: 3.4
-        - os: osx
+        - os: xcode11.3
           language: generic
           env: PYTHON=3.5.1
           env: PY=python3
